@@ -1,0 +1,112 @@
+.meme {
+    width: 32.5%;
+    height: 273px;
+    margin: .417%;
+    background-size: cover !important;
+    border-radius: var(--border-radius);
+    text-decoration: none;
+}
+.meme-sub {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, var(--dark-overlay));
+    transition-duration: var(--duration);
+    border-radius: var(--border-radius);
+    transform: translateY(-35px);
+}
+.meme:hover {
+    text-decoration: none;
+}
+.meme:hover .meme-sub {
+    background: linear-gradient(180deg, transparent, var(--darker-overlay) 70%);
+    transition-duration: var(--duration);
+}
+.meme .reactions {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    background-color: transparent;
+    position: relative;
+    top: 100% !important;
+    transform: translateY(-100%);
+    border-bottom-left-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: var(--padding-2);
+    color: #fff;
+}
+.meme .reactions span {
+    height: auto;
+    width: auto;
+    margin: 0 var(--padding-3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.reactions span.icon {
+    width: auto;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    margin: 0 !important;
+}
+.reactions .number {
+    width: auto;
+    align-items: center;
+    justify-content: center;
+    margin: 0 var(--padding-1) 0 0 !important;
+    font-weight: 600;
+}
+.meme .reactions span .icon img {
+    width: 20px;
+    height: 20px;
+}
+.expand-btn {
+    width: 35px;
+    height: 35px;
+    background-color: var(--dark-overlay);
+    position: relative;
+    z-index: 1;
+    top: 70%;
+    left: calc(50% - 17.5px);
+    display: grid;
+    align-items: center;
+    border-radius: var(--circular-radius);
+    transition-duration: var(--duration);
+    transform: scale(0);
+    opacity: 0;
+}
+.expand-btn img {
+    width: 60%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.meme:hover .expand-btn {
+    top: calc(50% - 17.5px);
+    transition-duration: var(--duration);
+    transform: scale(1);
+    opacity: 1;
+}
+#meme-modal .modal-dialogue {
+    width: 100vw !important;
+    height: 100vh !important;
+    background-color: red !important;
+}
+#meme-modal .modal-content {
+    width: 100vw !important;
+    height: 100vh !important;
+    background-color: green;
+    position: absolute;
+    left: 0;
+}
+@media (max-width: 768px) {
+    .meme {
+        width: 49%;
+    }   
+    .meme .reactions span {
+        margin: 0 var(--padding-2);
+    }
+}

@@ -1,0 +1,24 @@
+.meme {
+    width: 32.5%;
+    height: 273px;
+    background-color: red;
+    margin: .417%;
+    background-size: cover !important;
+    border-radius: var(--border-radius);
+}
+.meme-sub {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, var(--dark-overlay));
+    transition-duration: var(--duration);
+    border-radius: var(--border-radius);
+}
+.meme:hover .meme-sub {
+    background: linear-gradient(180deg, transparent, var(--dark-overlay) 100%);
+    transition-duration: var(--duration);
+}
+@media (max-width: 768px) {
+    .meme {
+        width: 49%;
+    }
+}

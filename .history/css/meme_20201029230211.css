@@ -1,0 +1,12 @@
+.meme {
+    width: 32.5%;
+    height: 273px;
+    background-color: red;
+    margin: .417%;
+    background-size: cover;
+}
+@media (max-width: 768px) {
+    .meme {
+        width: 49%;
+    }
+}

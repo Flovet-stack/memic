@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/faceit.svg">
+    <!-- custom styles -->
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/admin-profile.css">
+    <link rel="stylesheet" href="css/meme.css">
+
+    <!-- custom fonts -->
+    <link rel="stylesheet" href="/usr/share/fonts/opentype/malayalam/Manjari-Regular.otf">
+
+    <!-- bootstrap css styles -->
+    <link rel="stylesheet" href="dist/css/bootstrap.min.css">
+    <title>memes | John Doe</title>
+</head>
+<body>
+    <!-- start of the home page design template -->
+
+    <!-- start of the head section of the page -->
+    <div class="home-head container-fluid">
+        <div class="row">
+            <div class="home-head-sec-1">
+                <a title="Memic" href="home.html" class="logo"><img src="assets/images/faceit.svg" alt=""></a>
+                <form>
+                    <input data-toggle="tooltip" title="search" type="text" name="" id="" placeholder="search">
+                </form>
+            </div>
+            <div class="home-head-sec-2">
+                <a data-toggle="tooltip" title="Home" href="#">
+                    <img class="primary-icon" src="assets/icons/house.svg" alt="">
+                    <img class="secondary-icon" src="assets/icons/house-primary.svg" alt="">
+                </a>
+                <a data-toggle="tooltip" title="Groups" href="#">
+                    <img class="primary-icon" src="assets/icons/user-group.svg" alt="">
+                    <img class="secondary-icon" src="assets/icons/user-group-primary.svg" alt="">
+                </a>
+                <a data-toggle="tooltip" title="Friends" href="#">
+                    <img class="primary-icon" src="assets/icons/friends.svg" alt="">
+                    <img class="secondary-icon" src="assets/icons/friends-primary.svg" alt="">
+                </a>
+            </div>
+            <div class="home-head-sec-3">
+                <div class="user-menu">
+                    <a href="#" class="dropdown-toggle" id="user-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img class="profile-img" src="assets/images/avatar.jpg" alt="">
+                        <!-- <img class="caret" src="assets/icons/icon-down.svg" alt=""> -->
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="user-menu">
+                      <a class="dropdown-item" href="admin-profile.html">Profile</a>
+                      <a class="dropdown-item" href="#">Profile Settings</a>
+                      <a class="dropdown-item" href="#">Log-Out</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of the head section of the page -->
+    <!-- start of the body section of the page -->
+    <div class="home-body container-fluid">
+        <div class="row">
+            <div class="home-center">
+                <div class="container-fluid">
+                    <div class="profile-card">
+                        <div class="profile-cover" style="background: url(assets/images/Pic.jpg);">
+                            <div class="profile-info">
+                                <div class="profile-info-pic"><img src="assets/images/img_avatar.png" alt=""></div>
+                                <div class="profile-info-details">
+                                    <h3>Jon Doe</h3>
+                                    <h5>@johnd</h5>
+                                    <button class="follow-btn">Follow</button>
+                                </div>
+                            </div>
+                            <button class="change-cover-btn">+</button>
+                        </div>
+                        <section class="profile-stat">
+                            <div class="profile-stat-sub">
+                                <div class="static-stat">
+                                    <span class="stat-value">45</span>
+                                    <span class="stat-name">Likes</span>
+                                </div>
+                                <div class="static-stat">
+                                    <span class="stat-value">86</span>
+                                    <span class="stat-name">Memes</span>
+                                </div>
+                                <a class="dynamic-stat">
+                                    <span class="stat-value">130</span>
+                                    <span class="stat-name">Followers</span>
+                                </a>
+                                <a class="dynamic-stat">
+                                    <span class="stat-value">312</span>
+                                    <span class="stat-name">Following</span>
+                                </a>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <section class="container-fluid">
+                    <div class="admin-social">
+                        <a href="#" class="admin-social-sub facebook"><img src="assets/icons/icon-facebook.svg" alt=""></a>
+                        <a href="#" class="admin-social-sub twitter"><img src="assets/icons/icon-twitter.svg" alt=""></a>
+                        <a href="#" class="admin-social-sub instagram"><img src="assets/icons/icon-instagram.svg" alt=""></a>
+                        <a href="#" class="admin-social-sub pinterest"><img src="assets/icons/icon-pinterest-white.svg" alt=""></a>
+                        <a href="#" class="admin-social-sub mail"><img src="assets/icons/icon-email.svg" alt=""></a>
+                    </div>
+                </section>
+          
+                <ul class="nav nav-tabs admin-tabs" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <a class="nav-link active" data-toggle="tab" href="#admin-memes" role="tab">Memes</a>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <a class="nav-link" data-toggle="tab" href="#admin-saved-memes" role="tab">Collection</a>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <a class="nav-link" data-toggle="tab" href="#bookmarked-memes" role="tab">Bookmarked</a>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <a class="nav-link" data-toggle="tab" href="#admin-tagged" role="tab">Tagged</a>
+                  </li>
+                </ul>
+          
+                <div class="tab-content" role="tablist">
+                  <div class="tab-pane fade show active" id="admin-memes" role="tabpanel">
+                      <div class="meme-con">
+                        <a href="#" class="meme" style="background: url(assets/images/Pic.jpg);">
+                            <!-- <div class="expand-btn"></div> -->
+                            <div class="meme-sub">
+                                <div class="reactions">
+                                    <span class="haha"><span class="number">201</span><span class="icon"><img src="assets/icons/laughing.svg" alt=""></span></span>
+                                    <span class="slap"><span class="number">3</span><span class="icon"><img src="assets/icons/waving-hand.svg" alt=""></span></span>
+                                    <span class="comment"><span class="number">23</span><span class="icon"><img src="assets/icons/chat-comment-oval-speech-bubble-with-text-lines.svg" alt=""></span></span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="meme" style="background: url(assets/images/photo6.png);">
+                            <!-- <div class="expand-btn"></div> -->
+                            <div class="meme-sub">
+                                <div class="reactions">
+                                    <span class="haha"><span class="number">201</span><span class="icon"><img src="assets/icons/laughing.svg" alt=""></span></span>
+                                    <span class="slap"><span class="number">3</span><span class="icon"><img src="assets/icons/waving-hand.svg" alt=""></span></span>
+                                    <span class="comment"><span class="number">23</span><span class="icon"><img src="assets/icons/chat-comment-oval-speech-bubble-with-text-lines.svg" alt=""></span></span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="meme" style="background: url(assets/images/photo8.png);">
+                            <!-- <div class="expand-btn"></div> -->
+                            <div class="meme-sub">
+                                <div class="reactions">
+                                    <span class="haha"><span class="number">201</span><span class="icon"><img src="assets/icons/laughing.svg" alt=""></span></span>
+                                    <span class="slap"><span class="number">3</span><span class="icon"><img src="assets/icons/waving-hand.svg" alt=""></span></span>
+                                    <span class="comment"><span class="number">23</span><span class="icon"><img src="assets/icons/chat-comment-oval-speech-bubble-with-text-lines.svg" alt=""></span></span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="meme" style="background: url(assets/images/dog-image-1.jpg);">
+                            <!-- <div class="expand-btn"></div> -->
+                            <div class="meme-sub">
+                                <div class="reactions">
+                                    <span class="haha"><span class="number">201</span><span class="icon"><img src="assets/icons/laughing.svg" alt=""></span></span>
+                                    <span class="slap"><span class="number">3</span><span class="icon"><img src="assets/icons/waving-hand.svg" alt=""></span></span>
+                                    <span class="comment"><span class="number">23</span><span class="icon"><img src="assets/icons/chat-comment-oval-speech-bubble-with-text-lines.svg" alt=""></span></span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="meme" style="background: url(assets/images/dog-image-2.jpg);">
+                            <!-- <div class="expand-btn"></div> -->
+                            <div class="meme-sub">
+                                <div class="reactions">
+                                    <span class="haha"><span class="number">201</span><span class="icon"><img src="assets/icons/laughing.svg" alt=""></span></span>
+                                    <span class="slap"><span class="number">3</span><span class="icon"><img src="assets/icons/waving-hand.svg" alt=""></span></span>
+                                    <span class="comment"><span class="number">23</span><span class="icon"><img src="assets/icons/chat-comment-oval-speech-bubble-with-text-lines.svg" alt=""></span></span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="meme" style="background: url(assets/images/dog-image-3.jpg);">
+                            <!-- <div class="expand-btn"></div> -->
+                            <div class="meme-sub">
+                                <div class="reactions">
+                                    <span class="haha"><span class="number">201</span><span class="icon"><img src="assets/icons/laughing.svg" alt=""></span></span>
+                                    <span class="slap"><span class="number">3</span><span class="icon"><img src="assets/icons/waving-hand.svg" alt=""></span></span>
+                                    <span class="comment"><span class="number">23</span><span class="icon"><img src="assets/icons/chat-comment-oval-speech-bubble-with-text-lines.svg" alt=""></span></span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="meme" style="background: url(assets/images/avatar.jpg);">
+                            <!-- <div class="expand-btn"></div> -->
+                            <div class="meme-sub">
+                                <div class="reactions">
+                                    <span class="haha"><span class="number">201</span><span class="icon"><img src="assets/icons/laughing.svg" alt=""></span></span>
+                                    <span class="slap"><span class="number">3</span><span class="icon"><img src="assets/icons/waving-hand.svg" alt=""></span></span>
+                                    <span class="comment"><span class="number">23</span><span class="icon"><img src="assets/icons/chat-comment-oval-speech-bubble-with-text-lines.svg" alt=""></span></span>
+                                </div>
+                            </div>
+                        </a>
+                      </div>
+                  </div>
+                  <div class="tab-pane fade" id="admin-saved-memes" role="tabpanel">
+                      <div class="meme-con">
+                        <a href="#" class="meme" style="background: url(assets/images/Pic.jpg);">
+                            <!-- <div class="expand-btn"></div> -->
+                            <div class="meme-sub">
+                                <div class="reactions">
+                                    <span class="haha"><span class="number">201</span><span class="icon"><img src="assets/icons/laughing.svg" alt=""></span></span>
+                                    <span class="slap"><span class="number">3</span><span class="icon"><img src="assets/icons/waving-hand.svg" alt=""></span></span>
+                                    <span class="comment"><span class="number">23</span><span class="icon"><img src="assets/icons/chat-comment-oval-speech-bubble-with-text-lines.svg" alt=""></span></span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="meme" style="background: url(assets/images/Pic.jpg);">
+                            <!-- <div class="expand-btn"></div> -->
+                            <div class="meme-sub">
+                                <div class="reactions">
+                                    <span class="haha"><span class="number">201</span><span class="icon"><img src="assets/icons/laughing.svg" alt=""></span></span>
+                                    <span class="slap"><span class="number">3</span><span class="icon"><img src="assets/icons/waving-hand.svg" alt=""></span></span>
+                                    <span class="comment"><span class="number">23</span><span class="icon"><img src="assets/icons/chat-comment-oval-speech-bubble-with-text-lines.svg" alt=""></span></span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="meme" style="background: url(assets/images/Pic.jpg);">
+                            <!-- <div class="expand-btn"></div> -->
+                            <div class="meme-sub">
+                                <div class="reactions">
+                                    <span class="haha"><span class="number">201</span><span class="icon"><img src="assets/icons/laughing.svg" alt=""></span></span>
+                                    <span class="slap"><span class="number">3</span><span class="icon"><img src="assets/icons/waving-hand.svg" alt=""></span></span>
+                                    <span class="comment"><span class="number">23</span><span class="icon"><img src="assets/icons/chat-comment-oval-speech-bubble-with-text-lines.svg" alt=""></span></span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="bookmarked-memes" role="tabpanel">
+                      <div class="meme-con">
+                        <a href="#" class="meme" style="background: url(assets/images/dog-image-1.jpg);">
+                            <!-- <div class="expand-btn"></div> -->
+                            <div class="meme-sub">
+                                <div class="reactions">
+                                    <span class="haha"><span class="number">201</span><span class="icon"><img src="assets/icons/laughing.svg" alt=""></span></span>
+                                    <span class="slap"><span class="number">3</span><span class="icon"><img src="assets/icons/waving-hand.svg" alt=""></span></span>
+                                    <span class="comment"><span class="number">23</span><span class="icon"><img src="assets/icons/chat-comment-oval-speech-bubble-with-text-lines.svg" alt=""></span></span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="meme" style="background: url(assets/images/dog-image-2.jpg);">
+                            <!-- <div class="expand-btn"></div> -->
+                            <div class="meme-sub">
+                                <div class="reactions">
+                                    <span class="haha"><span class="number">201</span><span class="icon"><img src="assets/icons/laughing.svg" alt=""></span></span>
+                                    <span class="slap"><span class="number">3</span><span class="icon"><img src="assets/icons/waving-hand.svg" alt=""></span></span>
+                                    <span class="comment"><span class="number">23</span><span class="icon"><img src="assets/icons/chat-comment-oval-speech-bubble-with-text-lines.svg" alt=""></span></span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="meme" style="background: url(assets/images/dog-image-3.jpg);">
+                            <!-- <div class="expand-btn"></div> -->
+                            <div class="meme-sub">
+                                <div class="reactions">
+                                    <span class="haha"><span class="number">201</span><span class="icon"><img src="assets/icons/laughing.svg" alt=""></span></span>
+                                    <span class="slap"><span class="number">3</span><span class="icon"><img src="assets/icons/waving-hand.svg" alt=""></span></span>
+                                    <span class="comment"><span class="number">23</span><span class="icon"><img src="assets/icons/chat-comment-oval-speech-bubble-with-text-lines.svg" alt=""></span></span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="meme" style="background: url(assets/images/avatar.jpg);">
+                            <!-- <div class="expand-btn"></div> -->
+                            <div class="meme-sub">
+                                <div class="reactions">
+                                    <span class="haha"><span class="number">201</span><span class="icon"><img src="assets/icons/laughing.svg" alt=""></span></span>
+                                    <span class="slap"><span class="number">3</span><span class="icon"><img src="assets/icons/waving-hand.svg" alt=""></span></span>
+                                    <span class="comment"><span class="number">23</span><span class="icon"><img src="assets/icons/chat-comment-oval-speech-bubble-with-text-lines.svg" alt=""></span></span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="admin-tagged" role="tabpanel">
+                      <div class="meme-con">
+                        <a href="#" class="meme" style="background: url(assets/images/Pic.jpg);">
+                            <!-- <div class="expand-btn"></div> -->
+                            <div class="meme-sub">
+                                <div class="reactions">
+                                    <span class="haha"><span class="number">201</span><span class="icon"><img src="assets/icons/laughing.svg" alt=""></span></span>
+                                    <span class="slap"><span class="number">3</span><span class="icon"><img src="assets/icons/waving-hand.svg" alt=""></span></span>
+                                    <span class="comment"><span class="number">23</span><span class="icon"><img src="assets/icons/chat-comment-oval-speech-bubble-with-text-lines.svg" alt=""></span></span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="meme" style="background: url(assets/images/Pic.jpg);">
+                            <!-- <div class="expand-btn"></div> -->
+                            <div class="meme-sub">
+                                <div class="reactions">
+                                    <span class="haha"><span class="number">201</span><span class="icon"><img src="assets/icons/laughing.svg" alt=""></span></span>
+                                    <span class="slap"><span class="number">3</span><span class="icon"><img src="assets/icons/waving-hand.svg" alt=""></span></span>
+                                    <span class="comment"><span class="number">23</span><span class="icon"><img src="assets/icons/chat-comment-oval-speech-bubble-with-text-lines.svg" alt=""></span></span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="meme" style="background: url(assets/images/Pic.jpg);">
+                            <!-- <div class="expand-btn"></div> -->
+                            <div class="meme-sub">
+                                <div class="reactions">
+                                    <span class="haha"><span class="number">201</span><span class="icon"><img src="assets/icons/laughing.svg" alt=""></span></span>
+                                    <span class="slap"><span class="number">3</span><span class="icon"><img src="assets/icons/waving-hand.svg" alt=""></span></span>
+                                    <span class="comment"><span class="number">23</span><span class="icon"><img src="assets/icons/chat-comment-oval-speech-bubble-with-text-lines.svg" alt=""></span></span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                  </div>
+                </div>
+                <div style="height: 100vh;"></div>
+            </div>
+        </div>
+    </div>
+    <!-- end of the head section of the page -->
+
+    <!-- end of the home page design template -->
+
+    <script src="dist/js/bootstrap.min.js"></script>
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script src="js/jquery.min.js"></script>
+</html>
+

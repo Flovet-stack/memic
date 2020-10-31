@@ -1,0 +1,81 @@
+.meme {
+    width: 32.5%;
+    height: 273px;
+    background-color: red;
+    margin: .417%;
+    background-size: cover !important;
+    border-radius: var(--border-radius);
+    text-decoration: none;
+}
+.meme-sub {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, var(--dark-overlay));
+    transition-duration: var(--duration);
+    border-radius: var(--border-radius);
+}
+.meme:hover {
+    text-decoration: none;
+}
+.meme:hover .meme-sub {
+    background: linear-gradient(180deg, transparent, var(--darker-overlay) 70%);
+    transition-duration: var(--duration);
+}
+.meme .reactions {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    background-color: transparent;
+    position: relative;
+    top: 100% !important;
+    transform: translateY(-100%);
+    border-bottom-left-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: var(--padding-1);
+    color: #fff;
+}
+.meme .reactions span {
+    height: auto;
+    width: auto;
+    margin: 0 var(--padding-3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.reactions span.icon {
+    width: auto;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    margin: 0 !important;
+}
+.reactions .number {
+    width: auto;
+    align-items: center;
+    justify-content: center;
+    margin: 0 var(--padding-1) 0 0 !important;
+    font-weight: 600;
+}
+.meme .reactions span .icon img {
+    width: 20px;
+    height: 20px;
+}
+.expand-btn {
+    width: 40px;
+    height: 40px;
+    background-color: red;
+    position: relative;
+    top: 50%;
+    left: 50%;
+}
+@media (max-width: 768px) {
+    .meme {
+        width: 49%;
+    }   
+    .meme .reactions span {
+        margin: 0 var(--padding-2);
+    }
+}

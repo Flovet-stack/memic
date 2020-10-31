@@ -1,0 +1,17 @@
+.profile-card {
+    width: 100%;
+    height: auto;
+    background-color: red;
+}
+.profile-cover {
+    width: 100%;
+    height: 30vh;
+    background-color: blue;
+    background-size: 100% !important;
+    background-position: bottom !important;
+}
+.profile-info {
+    width: 400px;
+    height: 140px;
+    background-color: var(--white);
+}

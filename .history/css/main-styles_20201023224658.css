@@ -1,0 +1,55 @@
+:root {
+    /* color palette */
+    --white: #fff;
+    --white-shade-0: rgb(253, 253, 253);
+    --white-shade-1: #f0f8ff;
+    --white-shade-2: #ececec88;
+    --white-shade-3: #d0d0d0;
+    --border-color: #b2bec3;
+    --primary-color: #636E72;
+    /* --secondary-color: #6c5ce7; */
+    --secondary-color: #4d39e0;
+    --secondary-overlay: #4d39e046;
+    /* --secondary-overlay: #6c5ce746; */
+    --red: #d63031;
+    /* --red: #970f3c; */
+    --dark-overlay: rgba(10, 2, 19, 0.479);
+    --transparent-overlay: #ebf6ff;
+    --transparent-overlay-2: #d0d0d059;
+
+    /* text-editing */
+    --font-size-1: 16px;
+    --font-size-2: 18px;
+    --font-size-3: 20px;
+    --font-size-4: 22px;
+    --normal: 400;
+    --light: 200;
+    --thick: 600;
+    --font-family: Manjari;
+    --text-color: rgb(73, 72, 93);
+
+    /* box-styling */
+    --padding-1: .5rem;
+    --padding-2: 1rem;
+    --padding-3: 2rem;
+    --border-radius: 50px;
+    --circular-radius: 50%;
+    --border: 2px solid var(--white-shade-2);
+
+    /* animations */
+    --duration: .5s;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: var(--font-family);
+    overflow-x: hidden;
+    background-color: red;
+}
+.row {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+}
+a {
+    outline: none !important;
+}

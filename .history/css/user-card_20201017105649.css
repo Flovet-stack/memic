@@ -1,0 +1,40 @@
+/* start of the user card styling */
+.user-card {
+    width: 150px;
+    height: 50px;
+    display: flex;
+    color: var(--white);
+    text-decoration: none;
+    border-radius: var(--border-radius);
+    transition-duration: var(--duration);
+}
+.user-card:hover {
+    text-decoration: none;
+    background-color: var(--transparent-overlay-2);
+    transition-duration: var(--duration);
+}
+.user-card-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: var(--circular-radius);
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-size: cover !important;
+}
+.user-card-detail {
+    width: 100px; 
+    height: 50px;
+    padding-left: var(--padding-1);
+    color: var(--text-color);
+    display: grid;
+    align-content: center;
+}
+.username {
+    font-size: var(--font-size-2);
+    font-weight: 600;
+}
+.card-time {
+    font-size: var(--font-size-1);
+    color: var(--secondary-color);
+}
+/* end of the user card styling */
